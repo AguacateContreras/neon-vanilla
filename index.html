@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Vanilla</title>
+    <style>
+        *{box-sizing:border-box}
+        .my-widget {
+            position: relative;
+            background: rgb(21, 101, 194);
+            width: 300px;
+            font-family: helvetica;
+            color: white;
+            padding: 20px;
+            opacity: 0.4;
+        }
+            .my-widget img {
+                max-width: 100%;
+            }
+            .my-widget.active {
+                opacity: 1;
+            }
+            .my-widget.disable {
+                background: gray;
+            }
+            .my-widget.disable button:not(button.enable-disable) {
+                pointer-events: none;
+            }
+    </style>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
